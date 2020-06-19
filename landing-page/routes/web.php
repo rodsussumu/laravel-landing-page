@@ -12,5 +12,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', 'ClienteController@index');
-Route::post('/home', 'ClienteController@store');
+Route::get('/', 'ClienteController@index');
+Route::post('/', 'ClienteController@store');
