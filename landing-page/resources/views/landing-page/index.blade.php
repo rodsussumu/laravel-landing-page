@@ -9,6 +9,4 @@
         <input type="text" id="telefone" name="telefone" placeholder="Informe seu telefone">
         <button type="submit">Enviar</button>
     </form>
-</body>
-</html>
 @endsection
