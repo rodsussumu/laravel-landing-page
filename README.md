@@ -2,14 +2,12 @@
 
 ## Integrantes
 
-```
-Abraão Azevedo RM83983
-Geovanne Amorim RM82578
-Iago Garcia RM82448
-Luis Guilherme RM80389
-Nicolas Nunes RM82331
-Rodrigo Tanaka RM83888
-```
+- Abraão Azevedo RM83983
+- Geovanne Amorim RM82578
+- Iago Garcia RM82448
+- Luis Guilherme RM80389
+- Nicolas Nunes RM82331
+- Rodrigo Tanaka RM83888
 
 ## Instalando dependencias
 
