@@ -14,6 +14,7 @@
 - composer install
 
 * É necessario copiar o .env-example e renomar a copia para .env(alterando os dados para conexão com banco de dados)
+* DB Name : n2020-como-usa
 
 ## Criando migrations
 
