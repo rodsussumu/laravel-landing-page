@@ -158,16 +158,24 @@
         </p>
         <br>
         <div class="container">
-            <form class="mx-auto formulario">
+            <form class="mx-auto formulario" method="post" action="home">
+                @csrf
                 <div class="form-group">
                     <label for="exampleInputNome1">Escreva seu nome:</label>
-                    <input type="text" class="form-control" id="exampleInputNome1" placeholder="Seu Nome">
+                    <input type="text" class="form-control" name="nome" id="exampleInputNome1" placeholder="Seu Nome">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail">Escreva seu E-mail:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Seu email">
                     <small id="nameHelp" class="form-text text-muted">Nunca vamos compartilhar seu nome e email, com
+                        ninguém.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputTelefone">Escreva seu Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" class="form-control" id="exampleInputTelefone1" aria-describedby="emailHelp"
+                        placeholder="Seu telefone">
+                    <small id="nameHelp" class="form-text text-muted">Nunca vamos compartilhar seu nome e telefone, com
                         ninguém.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Cadastrar</button>

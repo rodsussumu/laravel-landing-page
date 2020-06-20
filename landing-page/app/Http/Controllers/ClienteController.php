@@ -25,6 +25,6 @@ class ClienteController
                 'mensagem',
                 "Enviado com sucesso!!! Entraremos em contato dentro de 3 dias uteis."
             );
-        return redirect('/home');
+        return redirect('/');
     }
 }

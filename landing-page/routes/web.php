@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'ClienteController@index');
-Route::post('/', 'ClienteController@store');
+Route::post('/home', 'ClienteController@store');
