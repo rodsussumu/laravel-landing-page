@@ -1,7 +1,8 @@
 @extends("layout")
 
 @section("conteudo")
-<div class="progress-container">
+<main data-spy="scroll">
+    <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
     </div>
     <div class="backgroundHome">
@@ -23,7 +24,12 @@
                 </div>
             </nav>
         </div>
-
+        <div class="bg-text">
+            <h1 class="titleSection">Aprenda agora a usar apps.</h1>
+            <p>É muito importante o uso da tecnologia, ainda mais nesse período de pandemia, nosso objetivo é fazer com que todos aprendam a usar a tecnologia a seu favor.</p>
+            <a href="https://comousa.netlify.app/" class="btn btn-primary">Cadastrar-se</a>
+            <a href="https://comousa.netlify.app/" class="btn btn-primary">Entrar</a>
+        </div>
     </div>
     <div class="container">
         <h2 class="titleSection" id="quemSomos">Quem <b>Somos?</b></h2>
@@ -32,34 +38,96 @@
             para te ajudar em seu dia-a-dia.</p>
         <br>
         <h2 class="titleSection" id="quemSomos">Nossa <b>Equipe</b></h2>
-        <p class="subTitle">Nossa equipe é formada por profissionais comprometidos com excelência nas realizações de suas atividades.</p>
+        <p class="subTitle">Nossa equipe é formada por profissionais comprometidos com excelência nas realizações de
+            suas atividades.</p>
         <div class="container">
+
             <div class="row">
-                <div class="card">
-                    <img src="/w3images/team2.jpg" alt="John">
-                    <h3>John Doe</h3>
-                    <p>CEO & Founder, Example</p>
-                    <p>Harvard University</p>
-                    <div style="margin: 24px 0;">
-                      <a href="#"><i class="fa fa-twitter"></i></a>  
-                      <a href="#"><i class="fa fa-linkedin"></i></a>  
-                      <a href="#"><i class="fa fa-github"></i></a> 
+                <div class="card cardGroup">
+                    <img src="{{ asset('assets/aabrao.png') }}" alt="Abraão Azevedo">
+                    <div class="card-body">
+                        <h3 class="card-title">Abraão<br>Azevedo</h3>
+                        <p class="card-text">Front-end & UX</p>
+                        <p class="card-text">FIAP</p>
+                        <div style="margin: 24px 0;">
+                            <a onclick="snackbar()"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/azabraao/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/azabraao"><i class="fa fa-github"></i></a>
+                        </div>
                     </div>
-                    <p><button>Contact</button></p>
-                  </div>
-                  <div class="card">
-                    <img src="/w3images/team2.jpg" alt="John">
-                    <h3>John Doe</h3>
-                    <p>CEO & Founder, Example</p>
-                    <p>Harvard University</p>
-                    <div style="margin: 24px 0;">
-                        <a href="#"><i class="fa fa-twitter"></i></a>  
-                        <a href="#"><i class="fa fa-linkedin"></i></a>  
-                        <a href="#"><i class="fa fa-github"></i></a>  
+                </div>
+                <div class="card cardGroup">
+                    <img src="{{ asset('assets/giago.png') }}" alt="Iago Garcia">
+                    <div class="card-body">
+                        <h3 class="card-title">Iago<br>Garcia</h3>
+                        <p class="card-text">Back-end</p>
+                        <p class="card-text">FIAP</p>
+                        <div style="margin: 24px 0;">
+                            <a onclick="snackbar()"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/iago-monteiro-garcia-293509153/"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/iago-monteirog"><i class="fa fa-github"></i></a>
+                        </div>
                     </div>
-                    <p><button>Contact</button></p>
-                  </div>
+                </div>
+                <div class="card cardGroup">
+                    <img src="{{ asset('assets/ageovanne.png') }}" alt="Geovanne Amorim">
+                    <div class="card-body">
+                        <h3 class="card-title">Geovanne<br>Amorim</h3>
+                        <p class="card-text">Marketing & UI</p>
+                        <p class="card-text">FIAP</p>
+                        <div style="margin: 24px 0;">
+                            <a href="https://twitter.com/Geovanne_Coelho"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/geovannecoelho/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/geovannecoelho"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <br>
+            <div class="row">
+                <div class="card cardGroup">
+                    <img src="{{ asset('assets/srodrigo.png') }}" alt="Rodrigo Sussumo">
+                    <div class="card-body">
+                        <h3 class="card-title">Rodrigo<br>Sussumo</h3>
+                        <p class="card-text">Back-end</p>
+                        <p class="card-text">FIAP</p>
+                        <div style="margin: 24px 0;">
+                            <a onclick="snackbar()"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/rodsussumu/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/rodsussumu"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardGroup">
+                    <img src="{{ asset('assets/nnicolas.png') }}" alt="Nicolas Nunes">
+                    <div class="card-body">
+                        <h3 class="card-title">Nicolas<br>Nunes</h3>
+                        <p class="card-text">Negócios</p>
+                        <p class="card-text">FIAP</p>
+                        <div style="margin: 24px 0;">
+                            <a onclick="snackbar()"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/nicolas-nunes/"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardGroup">
+                    <img src="{{ asset('assets/bluis.png') }}" alt="Luis Bispo">
+                    <div class="card-body">
+                        <h3 class="card-title">Luis<br>Bispo</h3>
+                        <p class="card-text">Front-end</p>
+                        <p class="card-text">FIAP</p>
+                        <div style="margin: 24px 0;">
+                            <a href="https://twitter.com/LuisBispo1914"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/luisguilhermebezerra/"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/LuisGuilhermeBispo"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="snackbar">Esse desenvolvedor não possuí a rede social.</div>
         </div>
         <br>
         <h2 class="titleSection" id="nossaPlataforma">Nossa <b>Plataforma!</b></h2>
@@ -67,16 +135,14 @@
             ninguém para te ajudar!</p>
         <div class="container">
             <div class="videoSection mx-auto">
-                <iframe width="100%" height="360" src="https://www.youtube.com/embed/AxqL4dBJQg4" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    <iframe width="100%" height="360" src="https://www.youtube.com/embed/5yn_ohd0YNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
     <br>
     <div class="container">
-        <div class="card">
-            <div class="card-body mx-auto">
+        <div class="card ">
+            <div class="card-body painel mx-auto">
                 <h4 class="card-title">Obtenha os melhores cursos básicos para te auxiliar no dia-a-dia.</h4>
                 <p class="card-text">É muito importante o uso da tecnologia, ainda mais nesse período de pandemia, nosso
                     objetivo é fazer com que todos aprendam a usar a tecnologia a seu favor.</p>
@@ -85,7 +151,6 @@
         </div>
     </div>
     <br>
-    
     <div class="container">
         <h2 class="titleSection" id="seuCadastro">Faça seu <b>Cadastro.</b></h2>
         <p class="subTitle">Faça seu cadastro para obter o acesso imediato a plataforma e também para mais informações,
@@ -93,24 +158,16 @@
         </p>
         <br>
         <div class="container">
-            <form class="mx-auto formulario"  action="home" method="post">
-                @csrf
+            <form class="mx-auto formulario">
                 <div class="form-group">
                     <label for="exampleInputNome1">Escreva seu nome:</label>
-                    <input type="text" id="nome"  name="nome"  class="form-control" id="exampleInputNome1" placeholder="Seu Nome">
+                    <input type="text" class="form-control" id="exampleInputNome1" placeholder="Seu Nome">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail">Escreva seu E-mail:</label>
-                    <input type="email" id="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Seu email">
                     <small id="nameHelp" class="form-text text-muted">Nunca vamos compartilhar seu nome e email, com
-                        ninguém.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputTelefone">Escreva seu Telefone:</label>
-                    <input type="email" id="telefone" name="telefone" class="form-control" id="exampleInputTelefone1" aria-describedby="emailHelp"
-                        placeholder="Seu email">
-                    <small id="nameHelp" class="form-text text-muted">Nunca vamos compartilhar seu nome e telefone, com
                         ninguém.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
@@ -164,6 +221,21 @@
         }
 
     </script>
+    <script>
+        function snackbar() {
+            // Get the snackbar DIV
+            var x = document.getElementById("snackbar");
+
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -173,4 +245,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+</main>
 @endsection
